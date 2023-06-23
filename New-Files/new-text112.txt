@@ -1,0 +1,3 @@
+What are Decision Trees? Decision trees divide inputs according to rules. A decision tree begins with a root node. If a certain feature exceeds or falls below a certain threshold, this node makes a binary decision. Upon reaching this threshold, every data point is classified and assigned to a new node. Every data point classified belongs to only one class after this process of subdivison is repeated on all children of the respective node. (2017) (Hastie et al.)
+
+Regression and non-numerical data can also be handled by Decision Trees. We will stick to classification in this example.

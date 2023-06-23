@@ -1,0 +1,5 @@
+The return four days prior provides the best information about the split in this example. Return free rate is the worst job.
+
+In other cases, we suggest looking at the feature importance to eliminate variables that explain very little of your classification. We can't really see any benefits from this analysis in this example.
+
+Additionally, it is important to look for correlated features since one will appear less important than another. Due to the first feature, the impurity of the second feature has already been removed.

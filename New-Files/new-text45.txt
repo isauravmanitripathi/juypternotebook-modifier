@@ -1,0 +1,11 @@
+This code snippet splits the feature set 'X_backward' into two separate sets: 'X_backward_train' and 'X_backward_test'. To create training and testing datasets, this type of splitting is commonly used in machine learning and data analysis.
+
+In order to facilitate the splitting, the code utilizes the 'train_test_split' function, typically provided by machine learning libraries. 'X_backward' is randomly divided into two sets: the training set ('X_backward_train') and the testing set ('X_backward_test').
+
+'X_backward_train' contains a portion of 'X_backward''s original features and is used for training. The data is used for training a machine learning model or performing any analysis that requires labeled or unlabeled data training. To make predictions or draw conclusions, the model learns patterns and relationships between features in 'X_backward_train'.
+
+In contrast, the 'X_backward_test' set contains the remaining features from 'X_backward'. As testing data, it is used to evaluate the performance of the trained machine learning model or to validate the results of the analysis. One can gain insight into the model's ability to make accurate predictions on unseen instances by assessing how well it generalizes to new, unseen data in the 'X_backward_test' set.
+
+The 'shuffle' parameter is set to 'False' in this specific code snippet. The order of the features in 'X_backward' is not shuffled during the splitting process. In time series data, the order of observations or features is particularly important, so this deterministic splitting ensures reproducibility.
+
+Test_size is set to 0.3, indicating that the testing set ('X_backward_test') will contain 30% of the original features from 'X_backward', while the remaining 70% will be assigned to the training set ('X_backward_train').

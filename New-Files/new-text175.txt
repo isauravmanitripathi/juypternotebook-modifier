@@ -1,0 +1,17 @@
+By using GridSearchCV for hyperparameter tuning, this code performs logistic regression on a reduced dataset obtained from PCA. Using the reduced principal components, we will build a logistic regression model and evaluate its performance.
+
+"clf.best_estimator_" is used to access the best estimator from the grid search. A logistic regression model is fitted to the training data, "X_pca_scaled_train" and "Y_train". At the specified index, the fitted model is stored in the model list.
+
+Using the "sm.Logit" class from the statsmodels library, a logistic regression model is created. As inputs, we use the target variable "y_logit" and the reduced feature set "X_pca_scaled". For convergence, 50 iterations are allowed. A logistic regression model is fitted to the data using the "fit" method, and the result is stored in "result_sns". "print(result_sns.summary())" prints the summary of the fitted logistic regression model.
+
+The logistic regression model is used to predict the test data, "X_pca_scaled_test". In "y_pred", predicted labels are stored. The "print" statement prints the accuracy of the logistic regression classifier on the test set. A logistic regression model's "score" method is used to calculate the accuracy score.
+
+Using the "cross_val_score" function, the logistic regression model is cross-validated. The training data "X_pca_scaled_train" and the target labels "y_train" are used with the specified time series splitting strategy "tscv". Each fold's accuracy score is calculated, and the average accuracy across all folds is displayed.
+
+Using the predicted labels "y_pred" and the true labels "y_test", the confusion matrix is calculated. For each class, the confusion matrix displays the number of true positives, true negatives, false positives, and false negatives.
+
+AUC scores are displayed along with the accuracy report, classification report, and ROC curve plot. For each class, the classification report provides precision, recall, F1-score, and support. With the "roc_auc_score" function, the area under the curve (AUC) score is calculated.
+
+In the summary list, the evaluation results are summarized. Concatenated with relevant labels and formatting are the counters for the model list and summary information, including the logistic regression model summary, accuracy, cross-validation average accuracy, classification report, and AUC score. Using the summary counter, the summary is stored in the summary list at the specified index. In subsequent iterations, the summary counter is incremented.
+
+Using GridSearchCV for hyperparameter tuning, this code performs logistic regression on a reduced dataset derived from PCA. The program fits the logistic regression model, evaluates its performance, and summarizes the results. Evaluation includes accuracy, cross-validation, confusion matrix, classification report, and ROC curve analysis. PCA and hyperparameter tuning provide insight into the performance of the logistic regression model on the reduced feature set.

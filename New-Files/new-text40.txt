@@ -1,0 +1,1 @@
+As all further steps must be performed separately, we must divide the data into training and test sets. Our test set consists of the last 30% of entries, not a random selection from the middle of the data set, so we need to set shuffling to false.

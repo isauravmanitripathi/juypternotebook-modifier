@@ -1,0 +1,1 @@
+The results were not significantly better with a non-boostrapped data set. We also did not see any predictive results when we trained on various subsets of our features. Using reverse feature elimination based on non-correlated features and importances did not change this. Are there any ways to improve our results further?

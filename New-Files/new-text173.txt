@@ -1,0 +1,5 @@
+
+In this case, we accept the null hypothesis instead of our model because of the LLR p-value 
+
+This time qskew and svix reach the predefined values at z and p
+but they are the only ones and even ret-2 does not give any significant information to the model. We can see that we ended up in the same classification as we got using only forward looking data. The ROC curve appears somewhat better, but still very poor.

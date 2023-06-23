@@ -1,0 +1,1 @@
+By selecting good features, we try to see if RFE will improve accuracy. We can only use the linear kernel for RFE because the weights of the SVM are not interpretable with other kernels. A minimum of 12 features were selected by the RFE.

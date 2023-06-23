@@ -1,0 +1,1 @@
+There are no noteworthy results compared to "Gini-Importance". All features are ranked equally important. It is also important to look for correlations between features.

@@ -1,0 +1,10 @@
+<ul>           <ul>         <li>We use the open source library sklearn to implement our machine learning algorithm because it offers many useful functions and is relatively easy to get started with         </li>         <li>In order to get more informations about our coefficients and the significance of our independent variables we are also using the statsmodels library because sklearn does not offer the possibility to get them         </li>         <li>We implement an emty list model_list and the variable model_counter to save our Models and use them lateron         </li>         <li>We define logit_model as our statsmodels logistic regression model to fit a model using maximum likelihood estimations from the method Logit wich we pass our earlier defined y and X Dataframes         </li>         <li> results_sns saves the fited model from statsmodels so we can print out a summary for all our coefficients         </li>         <li>Next we define logreg as our logistic regression It is well suited for one against the rest situations and delivers a good runtime for large dataset regressions when using the 'liblinear' solver from Sklearn. (2008))
+        </li>
+        <li>We save the fited model in our model_list therefore we pass the method our X and y Dataframes
+        </li>
+        <li>y_pred saves the predicted values from our fited model on the X test set to print out a confusion matrix lateron
+        </li>
+        <li>The score method gives us the accuracy of our fited model on the unseen test data
+        </li>
+        </ul>
+  </ul>

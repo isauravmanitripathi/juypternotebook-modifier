@@ -1,0 +1,7 @@
+We can see from the table above that the features have very different scales, and some are orders of magnitude apart.
+
+Support Vector Machines and Logistic Regression, which we use, are sensitive to feature scale. SVMs, for example, are highly sensitive to the scale of features (Zheng et al., 2018).
+
+If the features are not scaled, the features with large values will dominate other features, harming the performance of the model.
+
+Random forests, however, are not sensitive to input scale in tree-based machine learning models.

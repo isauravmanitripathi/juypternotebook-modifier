@@ -1,0 +1,1 @@
+As it is equally important to classify ups and downs correctly when trading in the market, accuracy is the best way to evaluate our models.

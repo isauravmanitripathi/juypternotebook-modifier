@@ -1,0 +1,21 @@
+Our data is split based on certain thresholds, as we mentioned earlier. Here are some possible split criteria we can use to decide which feature does the best job in splitting the data:
+
+The first. Impurity in Gini
+
+A Gini impurity is the probability of incorrectly classifying a randomly chosen element in the dataset if it had been randomly labeled according to the dataset's class distribution.
+
+The G function is equal to \sum_{i=1}^{C} p(i)*(1-(p(i)) 
+
+C is the number of classes and p(i) is the probability of randomly selecting an element from class i. (2017) (Hastie et al.)
+
+I would like to illustrate this further. The class distribution in the dataset is used to classify a datapoint. The dataset we choose is randomly selected, but just to illustrate the point, let's say we have a data set with six values. In this example, we classify as up /frac[3][6] and down /frac[3][6].
+
+The Gini impurity is what increases the likelihood that we classify the datapoint incorrectly. In our example, it would be 0.5. Since we have fewer misclassifications, a lower Gini impurity is favorable.
+
+There are some gini values in the second layer that are lower than those in the root node, so shouldn't they be a better seperator? The answer is no, since we calculated gini importance step by step with the remaining data set.
+
+This example is for binary decisions. Numeric data are sorted from lowest to highest and averaged. Gini impurity is calculated by asking if a value is less than the average between adjacent values. As a threshold, the lowest impurity is selected.
+
+Gini impurity features:
+
+Our model can also be evaluated by Gini impurity. `model.feature_importances_` allows us to print each split criterion's weighted importance. The number of samples split is accounted for by this parameter.

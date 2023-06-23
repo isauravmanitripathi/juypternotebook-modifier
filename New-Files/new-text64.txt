@@ -1,0 +1,1 @@
+In plotting our return direction in the space of the first three Principal Components, we see that predicting it will be difficult:

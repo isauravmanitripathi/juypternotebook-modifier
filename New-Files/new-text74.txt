@@ -1,0 +1,3 @@
+Choosing the right features is not enough. A good result depends on adjusting the settings of your model beforehand. From now on, we'll refer to these settings as hyperparameters.
+
+The best hyperparameters can be found in a variety of ways. This task can be accomplished using two established methods. Our machine learning models will later use them. (MÃ¼ller et al., 2018).

@@ -1,0 +1,3 @@
+For predicting the return direction (y), we compile different groups of features (X_group):
+
+The first. The following features are included: 2. 3. Forward looking (Risk-free rate and moments of risk neutral density) Taking a look backwards (factors and returns) 4. There are five factors to consider: size, value, momentum returns and risks, as well as the last return and the risk-free rate. Simple and exponential moving averages of returns (lagged returns)

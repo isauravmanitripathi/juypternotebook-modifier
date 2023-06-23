@@ -1,0 +1,9 @@
+The second is. The Entopy is: 
+
+Information gain can also be determined using entopy. In science, it is known as a measure of disorder.
+
+It is equal to \sum_{i=1}^{C} -p(i)*log(p(i)) 
+
+P(i) is the probability of randomly selecting an element from class i, where C is the number of classes. (2017) (Hastie et al.)
+
+It can be interpreted that entopy values near 0 are pure, while values approaching 1 (sometimes above) are impure.

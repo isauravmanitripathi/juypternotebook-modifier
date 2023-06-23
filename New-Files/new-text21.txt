@@ -1,0 +1,11 @@
+This code snippet generates and formats summary statistics for the numerical columns in a DataFrame called dforiginal.
+
+To generate summary statistics, the code uses the .describe() method on the DataFrame dforiginal. The code ensures that only numerical columns are included in the summary statistics by providing the argument include=[np.number].
+
+From the generated summary statistics, the code selects specific descriptive statistics. Statistics are presented in terms of mean, standard deviation, minimum value, 25th percentile (first quartile), median (50th percentile), 75th percentile (third quartile), and maximum value. Statistics provide insight into the numerical variables' distribution, spread, and central tendency.
+
+Using the .round(4) method, the code rounds the selected descriptive statistics to four decimal places to improve readability and presentation. As a result, the statistics are presented concisely and consistently.
+
+The code then transposes the resulting summary statistics DataFrame using .transpose(). As a result of this operation, the statistics are the rows and the variables (numerical columns) are the columns of the DataFrame. By transposing the DataFrame, it is easier to understand each numerical variable's statistics.
+
+This code snippet generates and formats a summary statistics DataFrame for the numerical columns in the dforiginal DataFrame. The code provides a comprehensive analysis of key statistical measures for the numerical variables by utilizing the .describe() method, selecting specific descriptive statistics, rounding the values, and transposing the DataFrame. It provides a clear and organized view of the distribution and characteristics of the numerical data.

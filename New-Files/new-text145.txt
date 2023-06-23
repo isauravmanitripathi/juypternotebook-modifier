@@ -1,0 +1,1 @@
+Each iteration of the algorithm will choose a different setting. With all options enabled, we are trying 10 * 2 * 12 * 3 * 3 * 2 = 4320 settings. It can become computationally very expensive if we have a large number of features. To begin with, we chose 40 settings and our "forward" dataset. Trying out all settings did not improve results in our testing.

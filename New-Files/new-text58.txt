@@ -1,0 +1,15 @@
+Selection of features and reduction of dimensions
+
+Feature selection is most important for high-dimensional problems (p>>N). By selecting only relevant features or feature combinations, two advantages can be achieved:
+
+The first. By eliminating unnecessary features, noise cannot be introduced into the models 2. With fewer features, models can be more complex (for example, SVMs with non-linear kernels).
+
+Feature selection is embedded in some machine learning methods, such as Random Forests. The SVM and Logistic Regression do not follow this rule.
+
+Methods such as "Mutual Information" use univariate feature ranking to measure a feature's dependence on a target. Unfortunately, these measures miss dependency structures between the features, resulting in a loss of information.
+
+Since our dataset is not high-dimensional and we already have subsets (all, forward, backward, etc), we carefully select features.
+
+Recursive Feature Elimination (RFE) ranks features by fitted estimator coefficients and drops the least important ones. This is repeated until a specified number of features is dropped or remaining features have a specific feature importance. Our models are fitted with Sklearn RFE.
+
+Principal Components Analysis (PCA) is often used to reduce the dimensionality of data sets. Principal components are linear feature combinations without linear dependency. The PCA then selects $k$ linear combinations that explain the most variance. Based on Minka's (2000) MLE method, we estimate $k$. Additionally, PCA mitigates the risk of multicollinearity introduced by feature engineering.

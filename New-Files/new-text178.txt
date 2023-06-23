@@ -1,0 +1,1 @@
+As a result of our manual feature reduction efforts, we also weren't able to achieve any significant improvements. ROC curves have improved in both cases, however.

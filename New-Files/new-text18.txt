@@ -1,0 +1,1 @@
+Here is how our return time-series looks. This is done by plotting daily returns and their monthly averages.

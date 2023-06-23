@@ -1,0 +1,3 @@
+Because of its flexibility, simplicity, and often quality results, Random Forest is a widely used supervised machine learning ensemble method based on decision trees.
+
+Beginners might find this definition helpful, but it will open up many new questions. Therefore, we will discuss some of those questions. Decision Trees are the fundamental building blocks of Random Forests. We will first introduce you to what the methods do and then explain why exactly it's done that way. Prerequisites:

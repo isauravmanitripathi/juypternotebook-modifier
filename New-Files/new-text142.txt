@@ -1,0 +1,7 @@
+A random forest classifier model's parameters and their corresponding values are displayed in this code. The goal is to provide visibility into the configuration and settings of the model that have been specified or determined automatically.
+
+On the "model_randomforest_allData" object, the "get_params()" method is called. A random forest classifier model's current parameter settings can be obtained using this method.
+
+To make the parameters and their values more readable, the "pprint" function is used. 'Pprint' stands for "pretty print" and formats complex data structures, such as dictionaries and objects, visually.
+
+Upon executing this code, the user can inspect the model's parameters and understand the specific settings used. The information provides insight into the model's behavior, any customization or tuning performed, and factors that may affect its performance.

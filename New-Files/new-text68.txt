@@ -1,0 +1,11 @@
+Data splitting for training and testing
+
+    Machine learning requires you to evaluate or confirm that your models deliver good forecasts fairly quickly. Holding back a part of the data from training can be used as an unseen test set to test the found model. Two questions arise from this.
+
+    How do we select the values for our test data set? Data for the test dataset can be selected in two ways. First, we can use a random variable to select random indexes until a predefined percentage of our dataset is included in the test. You can also select the data values you want to test manually.
+
+    As our basic data set for machine learning, we have a time series. Due to our interest in predicting future values, we are selecting our test data set using the second method explained above. Our test dataset was selected at the end of the time series.
+
+    Second, how large should the test data set be as a percentage of the entire dataset? A big test data set could result in a more robust validation but can decrease the amount of data available for the model training, which could result in a very poor performing model. There is then an optimization problem of finding the best trade-off between having more data to train or having a more robust validation. To solve this optimization problem, there are some approaches to calculating the best ratio between train and test sets. Considering that ratios between 25-35% are very common, we decided to take a test size of 30% of our basic data set.
+
+    Sklearn's train_test_split method is used to split our train and test data sets. Our test data set size is defined by the parameter test_size. For our 30%, we set it to 0.3. The method takes the 30% automatically from the end of the dataframe, but shuffles them first. The parameter shuffle=False prevents the shuffle and ensures that the 30% in our test set are from the end of our basic data set.

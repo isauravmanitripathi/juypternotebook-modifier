@@ -1,0 +1,9 @@
+Data scaling is performed using the MinMaxScaler on two sets of data related to a feature called "X_forward": "X_forward_train" and "X_forward_test."
+
+As a first step, the MinMaxScaler's "fit" method is invoked with the input "X_forward_train". For scaling the data, the minimum and maximum values of each feature in the training set are calculated and stored.
+
+After that, the "transform" method is applied to "X_forward_train" using the previously fitted MinMaxScaler. Based on the calculated minimum and maximum values, this operation scales the values of each feature in "X_forward_train". "X_forward_scaled_train" stores the scaled data.
+
+This time, we use the "transform" method on the test set, "X_forward_test." The MinMaxScaler instance is used to ensure consistency. In the variable "X_forward_scaled_test," the transformed test data is stored.
+
+The code calculates the minimum and maximum values for each feature by fitting the MinMaxScaler to the training set. Using the fitted scaler, the scaling transformation is applied to both training and test sets. The values in both sets are scaled consistently within a specified range, typically between 0 and 1, based on the characteristics of the training set.

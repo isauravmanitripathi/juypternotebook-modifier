@@ -1,0 +1,1 @@
+Take a look at our data. Our first element is printed using the method .head() on our DataFrame.

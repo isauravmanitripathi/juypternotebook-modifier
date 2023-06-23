@@ -1,0 +1,1 @@
+What is Ensemble Learning? Ensemble Learning involves using multiple models to improve a model's performance. We build multiple Decision Trees using Random Forest. A majority vote is cast by these trees to determine the final classification. 2017 (Hastie et al.)

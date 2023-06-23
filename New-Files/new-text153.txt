@@ -1,0 +1,1 @@
+Using sklearn's cross_val_score method, we calculate the cross validation score for our earlier developed times series split method (tscv) for our X and Y train datasets.

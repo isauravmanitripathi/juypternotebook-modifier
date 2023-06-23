@@ -1,0 +1,9 @@
+This code performs data scaling using MinMaxScaler on two sets of data associated with a feature called "X_backward": "X_backward_train" and "X_backward_test."
+
+In the first step, the MinMaxScaler's "fit" method is called with the input "X_backward_train". For scaling the data, we calculate and save the minimum and maximum values of each feature in the training set.
+
+Using the previously fitted MinMaxScaler, the "transform" method is applied to "X_backward_train". Based on the calculated minimum and maximum values, this operation scales the values of each feature in "X_backward_train". "X_backward_scaled_train" stores the transformed data.
+
+Once again, the "transform" method is utilized, but this time on the "X_backward_test." The same MinMaxScaler instance ensures consistency. In the variable "X_backward_scaled_test," the transformed test data is saved.
+
+For each feature, the code first fits the MinMaxScaler on the training set. With the fitted scaler, the scaling transformation is applied to both the training and test sets. Based on the characteristics of the training set, the values in both sets are scaled consistently within a specified range, typically between 0 and 1.

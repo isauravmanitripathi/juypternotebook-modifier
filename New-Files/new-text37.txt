@@ -1,0 +1,1 @@
+Lagged returns do not have a linear relationship. For some of our engineered trend features, such as There is a strong linear dependence between the means of returns, which could lead to multicollinearity. This problem is mitigated by the PCA introduced later.

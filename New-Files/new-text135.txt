@@ -1,0 +1,11 @@
+The code trains and tests a random forest classifier model multiple times in order to evaluate its performance repeatedly. To assess the model's average performance over multiple iterations, accuracy scores are obtained.
+
+To store the accuracy scores, an empty list called "scorelist" is created.
+
+Using range(30), a loop is set up to iterate 30 times. Each iteration of this loop will repeat the following steps:
+
+Within the loop, 100 decision trees are used to create a random forest classifier model. - The new model is trained using the training data "X_all_train" as well as the target labels "y_train". After training, the model is used to predict the target labels for the test data "X_all_test", which are stored in the "y_predicted" variable. By comparing the predicted labels "y_predicted" to Labels "y_test" are calculated using the accuracy_score function from the appropriate library. - The accuracy score is appended to the "scorelist" using the append method.
+
+As a result of the loop, the "scorelist" contains 30 accuracy scores, each corresponding to a different iteration of training and testing.
+
+This code trains and tests a random forest classifier model multiple times, storing the accuracy scores for each iteration. A model's average performance across multiple runs can be evaluated, providing insights into its overall effectiveness at making accurate predictions.

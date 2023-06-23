@@ -1,0 +1,9 @@
+Two data sets related to a feature called "X_factors" are scaled using the MinMaxScaler: "X_factors_train" and "X_factors_test."
+
+In the first step, the MinMaxScaler's "fit" method is called with the input "X_factors_train". To scale the data, we calculate and store the minimum and maximum values of each feature in the training set.
+
+Using the previously fitted MinMaxScaler, the "transform" method is used on "X_factors_train". Based on the calculated minimum and maximum values, this operation scales the values of each feature in "X_factors_train". The scaled data is then stored in the variable "X_factors_scaled_train."
+
+In the same manner, the "transform" method is invoked again, but now on the test set "X_factors_test." To ensure consistency, the same instance of MinMaxScaler is used. "X_factors_scaled_test" stores the transformed test data.
+
+Essentially, the code fits the MinMaxScaler to the training set to determine the minimum and maximum values for each feature. Using the fitted scaler, it applies the scaling transformation to both the training and test sets. Based on the characteristics of the training set, the values in both sets are scaled consistently within a specified range, typically 0 to 1.

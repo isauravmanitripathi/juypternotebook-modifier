@@ -1,0 +1,15 @@
+An SVM model with a linear kernel is selected using Recursive Feature Elimination with Cross-Validation (RFECV).
+
+The first step is to create an RFECV object, called "m_rfe.". An SVM model with a linear kernel is used as the estimator, and parameters such as cache size and class weight are configured. To evaluate the model's performance, "tscv" is also specified.
+
+A RFECV object is then fitted to the training data, where "X_all_scaled_train" represents the input features and "y_train" represents the target variables. To identify the optimal subset of features that contribute the most to the model's performance, RFECV uses recursive feature elimination along with cross-validation.
+
+Using the "get_support()" method of the RFECV object, the code retrieves the selected features. From the "X_all_train" dataset, these selected features are converted to a list and printed along with their corresponding names. According to the feature selection process, these features were considered important.
+
+In the next step, the fitted RFECV model is used to predict the target variable for the test dataset, "X_all_scaled_test." The predicted values are stored in "y_pred_linear_rfe."
+
+This code prints a classification report using the "classification_report" function, which displays metrics such as precision, recall, and F1-score for each class. In the "digits" parameter, the number of decimal places is specified.
+
+Lastly, the code prints the confusion matrix using the "confusion_matrix" function, which shows the number of samples correctly and incorrectly classified based on predicted and true labels.
+
+The code performs feature selection using RFECV for an SVM model with a linear kernel. The RFECV object is fitted to the training data, the selected features are retrieved, predictions are made on the test data, and a classification report and confusion matrix are used to assess the model's performance.

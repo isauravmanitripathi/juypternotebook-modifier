@@ -1,0 +1,7 @@
+As "model_randomforest_allData," this code prints the out-of-bag score of a trained Random Forest classifier.
+
+During the training process, the OOB score is calculated to determine the classifier's accuracy. Based on the non-bootstrap samples used to train each decision tree in the Random Forest, it estimates how well the classifier will perform on unseen data.
+
+This code provides information about the accuracy of the Random Forest classifier on unseen data by printing the OOB score. A model's OOB score serves as an internal validation metric that helps assess generalization performance without the need for additional validation data.
+
+Based on the samples not used during training, the code prints an estimate of the accuracy of a trained Random Forest classifier on unseen data.

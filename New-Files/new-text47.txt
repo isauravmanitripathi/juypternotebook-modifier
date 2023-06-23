@@ -1,0 +1,11 @@
+This code splits a dataset called "X_returns" into two parts: a training set and a test set.
+
+X_returns_train contains a subset of the original dataset and is used to train a machine learning model. The training phase allows the model to learn patterns and relationships within the data.
+
+The test set, denoted as "X_returns_test," includes the remaining portion of the dataset that was not included in the training set. This test set assesses the trained model's performance and generalization capabilities. The model can be evaluated based on how well it predicts unseen data or makes accurate inferences.
+
+The "train_test_split" function is used to split the dataset. The "shuffle" parameter is set to "False," which means that the data points within the dataset will not be randomly rearranged before splitting. Consequently, both the training and test sets will maintain the order of the data points in the "X_returns" dataset.
+
+"test_size" is set to 0.3, which means that 30% of the data will be allocated to the test set, while the remaining 70% will be allocated to the training set.
+
+Essentially, this code divides the "X_returns" dataset into two subsets: one for training and one for evaluating a machine learning model's performance.

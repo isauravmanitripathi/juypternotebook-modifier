@@ -1,0 +1,15 @@
+Using the given code, a bar plot is generated to visualize the weights or loadings of the features in the second principal component.
+
+The first step is to create the figure object, "fig," with a specific size defined by the argument [20,6]. Plot width and height are determined by this.
+
+Using the "add_axes" method, an axes object, "ax," is added to the figure. In the figure, the argument [0,0,1,1] specifies the position and size of the axes. The axes should occupy the entire figure in this case.
+
+There is a list of feature labels, "labl.". Input features to the PCA model are represented by these labels. A label corresponds to a specific variable or characteristic of the data.
+
+By using the "components_" attribute, the weights or loadings of the features on the second principal component are obtained. Weights represent the contribution of each feature to the second principal component.
+
+In order to create a bar plot, the "ax.bar" function is called. "labl" provides the x-axis labels, and "pc1" provides the heights of the bars.
+
+The generated bar plot is displayed using the "plt.show()" function.
+
+To visualize the weights or loadings of the features on the second principal component, the code generates a bar plot. According to the plot, each feature contributes to explaining the variation explained by the second principal component.

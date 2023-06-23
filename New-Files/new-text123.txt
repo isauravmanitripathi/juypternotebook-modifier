@@ -1,0 +1,13 @@
+Check out what the root node of this decision tree did.
+
+When ret_ewma_5  0, the decision tree asks if ret_ewma_5  is less than 0. Depending on the result, it either follows the true path or the false path.
+
+Gini = 0.5: Gini is a metric that measures the purity of a node/leaf (more on that later).
+
+The training data contains 1445 samples, so this value is set to 1445.
+
+The value list tells you how many samples at a given node fall into each category. This tree was constructed using 2305 of our 3303 values.
+
+Additionally, we can see that the split criteria sometimes have different thresholds and orders. It's perfectly normal to experience this. For instance, momentum_risk on the third layer, second from the right has '<=0.01' whilst the threshold for the second layer, second from the right has '<= 0.0'
+
+The ability to visualize certain trees in this way seems exciting. It's hard, however, to grasp the entire forest at once. (See documentation for scikit-learn)

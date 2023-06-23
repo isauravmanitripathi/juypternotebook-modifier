@@ -1,0 +1,9 @@
+Support Vector Machines construct hyperplanes
+
+In other words, f(x) = \beta_{0} + \beta_{1}x_{1} + ... The /beta_[p]x_[p]$
+
+In the vector space of $p$ features, that serves as the decision function and linearly separates the two classes of data points ($y /in /left/[1,-1 /right/]$).
+
+The linearly separable case has a margin $ M $, i.e. It maximizes the minimum euclidean distance between any observation and the separating hyperplane.
+
+As a result of non-separability, the Margin becomes soft. Tolerance for margin violations is determined by the cost parameter $C$. These violations are training observations can be misclassified or within the margin. The following figure illustrates a soft margin with some violations:

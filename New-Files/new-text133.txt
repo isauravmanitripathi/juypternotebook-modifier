@@ -1,0 +1,3 @@
+Changing the above features does not significantly improve performance. We saw a 0.005 percent decrease in accuracy after permuting 'ret_mean_10.
+
+The model will still have access to the feature through its correlated feature if two features are correlated and one is permuted. As a result, it will seem less important.

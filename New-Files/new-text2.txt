@@ -1,0 +1,3 @@
+We will discuss machine learning algorithms for predicting financial data in this notebook. A hands-on approach is provided through the machine learning pipeline using Support Vector Machines, Random Forests, and Logistic Regression on time-series data.
+
+It introduces you to important machine learning fundamentals in the context of finance as well as useful Python libraries so that you can start working on your own projects right away. The dataset we are using was used for the paper "Forward-looking P" (Walther et al., 2019). A binary classification problem is used to predict the return direction of the S&P 500 using this data.

@@ -1,0 +1,3 @@
+Before tuning, here are the big results:
+
+To build our trees, we draw random subsets. We cannot guarantee the accuracy of our models. To obtain a normal distribution, we choose a sample size of thirty.

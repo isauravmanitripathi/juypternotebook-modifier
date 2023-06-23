@@ -1,0 +1,5 @@
+The third point. Importance of permutations
+
+The accuracy of the model can also be directly measured when selecting features. The idea is to permute the values of each feature and measure how much accuracy the permutation decreases. In the case of unimportant features, the accuracy would not change, while in the case of important features, the accuracy should change significantly (see the scikit-learn documentation).
+
+Let's examine our model using scikit-learn's permutation_importance() method.

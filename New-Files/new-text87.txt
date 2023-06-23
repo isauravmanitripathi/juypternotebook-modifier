@@ -1,0 +1,9 @@
+This code creates a support vector machine (SVM) model with a polynomial kernel.
+
+A SVM model is defined by the "SVC" class. If the "kernel" parameter is set to poly, the model will use a polynomial kernel function that can capture non-linear relationships.
+
+6000 is the cache_size parameter, which indicates how much memory is allocated for caching data during model training. For datasets with a large number of samples, allocating a larger cache size can enhance training efficiency.
+
+Additionally, the "class_weight" parameter is set to 'balanced', which adjusts the weights assigned to different classes. It is particularly useful when dealing with imbalanced datasets in which there are unequal numbers of instances in different classes. With the 'balanced' option, the class weights are automatically adjusted to give more weight to the minority class, reducing the impact of class imbalance on the model's performance.
+
+The code creates an SVM model with a polynomial kernel and specifies a cache size for efficient training. To address class imbalances in the dataset, class weights are also applied. The model can capture non-linear relationships and find optimal decision boundaries between classes using polynomial functions, making it suitable for classification tasks.

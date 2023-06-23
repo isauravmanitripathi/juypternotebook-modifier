@@ -1,0 +1,9 @@
+To tune the hyperparameters of SVM models with different kernels, the code provides three parameter grids: "param_grid_linear," "param_grid_rbf," and "param_grid_poly."
+
+A single parameter, 'C', represents the regularization parameter for the linear kernel in the "param_grid_linear" dictionary. 'C' values are generated using np.logspace(-10,4,14), which creates a sequence of 14 logarithmically spaced values between 10^-10 and 10^4. During hyperparameter optimization, these values will be tested to determine the optimal linear kernel 'C' value.
+
+The "param_grid_rbf" dictionary is used for both the radial basis function (RBF) kernel and the sigmoid kernel. There are two parameters in this equation: 'C' and 'gamma'. 'C' represents the regularization parameter, and 'gamma' represents the Gaussian kernel width. C and Gamma are generated using np.logspace(-10,4,14), resulting in 14 logarithmically spaced values between 10^-10 and 10^4. For RBF and sigmoid kernels, these values will be explored during hyperparameter optimization.
+
+Three parameters are included in the "param_grid_poly" dictionary for the polynomial kernel: 'C', 'gamma', and 'degree'. 'C' and 'gamma' are generated using np.logspace(-2,1,4) and np.logspace(-3,1,5), respectively, resulting in four and five values, respectively. A fixed value of 2 is set for the 'degree' parameter. During hyperparameter optimization, these parameter combinations will be evaluated to identify the best polynomial kernel 'C', 'gamma', and 'degree' values.
+
+The code sets up parameter grids for hyperparameter tuning of linear, RBF/sigmoid, and polynomial SVM models. For each kernel type, these grids define the range of potential values for the regularization parameter ('C'), Gaussian kernel width ('gamma'), and polynomial degree ('degree').

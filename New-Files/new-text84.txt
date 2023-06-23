@@ -1,0 +1,1 @@
+The first step is to initialize the SVMs with the different kernels:

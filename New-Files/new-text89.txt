@@ -1,0 +1,1 @@
+Hyperparameter grids for rbf, polynomial, and sigmoid kernels consist of C, gamma, and degree.

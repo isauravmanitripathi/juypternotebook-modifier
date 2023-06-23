@@ -1,0 +1,19 @@
+Random forest model permutation importances are analyzed using this code. We evaluate the model's performance after randomly permuting the values of each feature to determine the importance of each feature in making predictions.
+
+The code imports the "permutation_importance" function from "sklearn.inspection". Calculate the importance of permutations using this function.
+
+Afterwards, the function "permutation_importance" is called with the random forest model ("model_randomforest_allData"), the training data ("X_all_train"), the target variable ("y_train"), and additional parameters, such as the number of repetitions for permutation ("n_repeats"), the reproducibility state ("random_state"), and the number of parallel jobs ("-n_jobs=2").
+
+Results of the permutation importances analysis are stored in the "result" variable, which contains information such as the importances for each feature and their mean.
+
+Using "result.importances_mean", the code sorts the features based on their mean importance. The "sorted_idx" variable contains the indices of the sorted features.
+
+Using the "subplots" function, the code creates a figure and axes object. Permutation importances will be plotted using this boxplot.
+
+A boxplot is created using "boxplot" applied to "result.importances[sorted_idx].T", where the importances of the sorted features are transposed. Boxplots are displayed horizontally ("vert=False"), and feature labels are set as sorted feature names from "X_all_train.columns[sorted_idx]".
+
+With the "set_title" method of the axes object, the plot's title is set to "Permutation Importances in our test set.".
+
+A tight layout is achieved by using the "tight_layout" method, and the plot is displayed using the "show" function from the "matplotlib.pyplot" module.
+
+This code performs a permutation importance analysis on a random forest model and generates a boxplot to visualize the relative importance of each feature. By evaluating the effect of random permutations on feature values, this analysis evaluates the impact of individual features on model performance.

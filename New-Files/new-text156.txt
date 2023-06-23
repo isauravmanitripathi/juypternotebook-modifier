@@ -1,0 +1,1 @@
+To get a better understanding of how our model makes predictions we want to look at the confusion matrix for our y test dataset. Therefore, we are using the confusion matrix method from Sklearn and passing it the predicted and actual values.

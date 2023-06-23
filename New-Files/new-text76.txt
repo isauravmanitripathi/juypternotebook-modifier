@@ -1,0 +1,1 @@
+Randomized Search The user sets a grid of hyperparameter values and selects random combinations to train and score the model. Explicit control over parameters and iterations possible. Randomized search is recommended for large data sets, but does not yield optimal results.

@@ -1,0 +1,1 @@
+Our final test set should be held out before scaling. Scalers are only fitted to training sets. A scaler fitted to the training set is then used to scale the test set. In reality, unseen data would also be scaled this way. As a result, we prevent information from leaking from the test set to the training set.

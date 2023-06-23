@@ -1,0 +1,31 @@
+Using Recursive Feature Elimination (RFE), this code selects features and applies logistic regression modeling to them. By using RFE, we identify important features, create a new dataset with only those features, and evaluate the logistic regression model on the reduced dataset.
+
+To store the names of the selected features, the code creates an empty list called "RFE_list". To keep track of the index for adding features to "RFE_list", the variable "z" is set to 0.
+
+To iterate over the "temp" list, which contains boolean values indicating whether each feature has been selected, a loop is used. "RFE_list" is incremented if a feature is selected (i.e., its boolean value is "True").
+
+"X_RFE" is created by selecting the columns from "RFE_list" from the original dataset "df". "X_RFE"'s index is reset, and the "loctimestamp" column is removed.
+
+"train_test_split" divides the dataset into training and test sets. In the training set, "X_trainRFE" and "y_trainRFE" are used, while in the test set, "X_testRFE" and "y_testRFE" are used. In order to maintain the time series order, 30% of the data is used in the test set, and the data is not shuffled.
+
+The "sm.Logit" class from the statsmodels library is used to create a logistic regression model. Model inputs include the target variable "y_logit" and the reduced feature set "X_RFE". For convergence, 50 iterations are allowed. A logistic regression model is fitted to the data using the "fit" method, and the results are stored in "result_sns".
+
+"print(result_sns.summary())" prints the summary of the fitted logistic regression model. It provides information about the model's coefficients, statistical significance, and goodness-of-fit measures.
+
+Using the training data "X_trainRFE" and the corresponding target labels "y_trainRFE", a logistic regression model is fitted using scikit-learn.
+
+The logistic regression model is used to predict the test data "X_testRFE", and the predicted labels are stored in "y_predRFE".
+
+A print statement is used to display the accuracy of the logistic regression classifier on the test set. Based on the logistic regression model, the accuracy score is calculated using the "score" method.
+
+The "cross_val_score" function is used to cross-validate the logistic regression model. Using the specified time series splitting strategy "tscv", it splits the training data "X_trainRFE" into target labels "y_trainRFE". Each fold's accuracy scores are computed, and the average accuracy is displayed.
+
+Based on the predicted labels "y_predRFE" and the true labels "y_testRFE", the confusion matrix is calculated. This confusion matrix shows the number of true positives, true negatives, false positives, and false negatives for each class of the model.
+
+"print" and "plt" are used to print and display the accuracy, classification report, and ROC curve plot with the corresponding AUC score.
+
+In the summary list, the evaluation results are summarized. There is a concatenation of the model list counter, accuracy, cross-validation average accuracy, classification report, and AUC score, along with relevant labels and formatting. In the summary list, the summary is stored at the specified index
+
+ Counter for summary. In subsequent iterations, the summary counter is incremented.
+
+This code performs feature selection based on RFE, creates a new dataset with the selected features, applies logistic regression modeling to the reduced feature set, and evaluates the model. The evaluation results are printed and stored in a summary list, including the logistic regression model summary, accuracy, cross-validation average accuracy, classification report, and AUC. Using a reduced feature set, the model's predictive performance can be evaluated on the basis of the importance of selected features.

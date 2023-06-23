@@ -1,0 +1,9 @@
+Data scaling is performed using the MinMaxScaler on two sets of data: "X_all_train" and "X_all_test."
+
+The MinMaxScaler's "fit" method is called first with the input "X_all_train". In this step, the minimum and maximum values of each feature in the training set are calculated and saved.
+
+The "transform" method is then applied to "X_all_train" using the previously fitted MinMaxScaler. The values of each feature in "X_all_train" are scaled according to the calculated minimum and maximum values. "X_all_scaled_train" stores the transformed data.
+
+This time, the "transform" method is applied to the test set "X_all_test." The same MinMaxScaler instance is used to ensure consistency. "X_all_scaled_test" stores the transformed test data.
+
+To determine the minimum and maximum values for each feature, the code first fits the MinMaxScaler to the training set. With the fitted scaler, it applies the scaling transformation to both the training and test sets. Based on the training set's characteristics, both sets are scaled consistently within a specified range, typically between 0 and 1.

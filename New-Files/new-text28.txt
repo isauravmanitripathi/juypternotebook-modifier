@@ -1,0 +1,1 @@
+Past returns may contain some information. The last five days' returns are added as features. In addition to today's return 'ret', this feature is also available.

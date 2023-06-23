@@ -1,0 +1,27 @@
+Here is the algorithm:
+
+Algorithm for Random Forest Classifiers:
+
+ Procedure RandomForestClassifier(D) 2: forest = new Array() 3: do i = 0 to N
+4:       Di = Bagging(D)                     
+5:           Ti = new DecisionTree()
+6:           featuresi = RandomFeatureSelection(Di)
+7:          Ti.train(Di,featuresi)
+8:       forest.add(Ti)
+9:     end for
+10:   return forest
+11: end procedure
+
+The first step is to create a 'bootstrapped data set'. Using our training data, we select random data points. There may be duplicate data points in this data. Overfitting can be reduced by reducing the variance in our data.
+
+With this subset of OB data, we create a decision tree using a split criterion (explained later). This does not use all features. At each step, we select a subset of features at random. Most libraries use /sqrt[n] of n features.
+
+You will end up with a random forest if you repeat this process repeatedly. As a result of randomized feature selection in each tree, forests are more effective than individual decision trees (Breiman 2001), because correlations between trees are reduced. A new data point is run through each individual decision tree when it is added. Data points are classified according to how each tree classified them. We make our final decision by majority vote among all the trees.
+
+ Time series analysis 
+
+Furthermore, bootstrapping assumes independence between observations, so the order of the time series will not be considered. As a result, we must implement features that capture trends, otherwise they will be overlooked. Dummy coded time information can range from lagged values to lagged values. We can use random forests with our stationary data since it is stationary.
+
+Error: Out-of-Bag
+
+About a third of the data is not used to create a tree. This is the "Out-of-Bag Dataset". Out-of-bag samples can then be run through all the trees they weren't used on. In the end, this gives us a measure of how accurate our forest is. "Out-of-Bag Error" refers to the proportion that was incorrectly classified. Based on limited data, we mostly use this measure when we don't construct a training. For demonstration purposes, we can call them `oob_score_`. When creating the model with scikit-learn, this must be set to True.

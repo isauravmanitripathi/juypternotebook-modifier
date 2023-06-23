@@ -1,0 +1,11 @@
+A Principal Component Analysis (PCA) is performed on the scaled training and test sets of data, represented by variables "X_all_scaled_train" and "X_all_scaled_test."
+
+An instance of the PCA class is created with 'mle' as the argument "n_components". Based on the "maximum likelihood estimation" method, the number of principal components will be determined automatically.
+
+The PCA model is then fitted to the scaled training set, "X_all_scaled_train." This step calculates the principal components based on the training data, capturing the direction of maximum variance.
+
+The "transform" method is used to project the scaled training data, "X_all_scaled_train," onto the newly calculated principal components. "X_pca_scaled_train" represents the transformed data in a new coordinate system defined by the principal components.
+
+The same PCA model is applied to the scaled test data, "X_all_scaled_test." The transformed test data is saved in the variable "X_pca_scaled_test."
+
+Basically, the code creates a PCA model with an automatically determined number of components. After fitting the model to the scaled training set, the transformation is applied to both the training and test sets. It allows dimensionality reduction and captures the most important patterns in the data by projecting the data onto principal components.

@@ -1,0 +1,3 @@
+Why shouldn't we just use Decision Trees? This description suggests that Decision Trees are a good alternative. Thus understanding the drawbacks of this method is important to understand the need for an improved method. - Decision Trees are known for overfitting.
+
+(Hastie et al., 2017) Random Forests uses many decision trees to address these issues. Step by step, let's clarify this.

@@ -1,0 +1,19 @@
+Based on p-values, this code performs logistic regression on the scaled dataset "X_all_scaled". By using the reduced feature set, a logistic regression model will be built and its performance evaluated.
+
+Using the "train_test_split" function, the scaled dataset is split into training and test sets. "X_all_scaled_train" and "X_all_scaled_test" are created. To maintain the time series order, the data are not shuffled, and 30% of the data are used for the test set.
+
+The initial parameters of a logistic regression model include the solver, maximum number of iterations, and class weights. Using the "fit" method, the model is fitted to the training data, "X_all_scaled_train" and "y_train".
+
+By using the "GridSearchCV" class, a grid search is performed to tune the logistic regression model's hyperparameters. A grid search explores different combinations of hyperparameters, specifically the regularization parameter "C" and the penalty type ("l1" or "l2"). Grid search is performed using the training data and the corresponding target labels, "X_all_scaled_train" and "y_train", using "tscv" time series splitting strategy. By using the "print" statement, the tuned hyperparameters that provide the best performance according to the grid search evaluation metric are displayed.
+
+The logistic regression model is used to predict the test data, "X_all_scaled_test". In "y_pred", predicted labels are stored. "print" prints the accuracy of the logistic regression classifier on the test set. A logistic regression model's "score" method is used to calculate the accuracy score.
+
+Using the "cross_val_score" function, the logistic regression model is cross-validated. With the specified time series splitting strategy "tscv", it uses the training data "X_all_scaled_train" and the corresponding target labels "y_train". For each fold, accuracy scores are computed, and the average accuracy across all folds is displayed.
+
+Using the predicted labels "y_pred" and the true labels "y_test", the confusion matrix is calculated. In the confusion matrix, each class is represented by the number of true positives, true negatives, false positives, and false negatives.
+
+Print and display the accuracy, classification report, and ROC curve plot with the corresponding AUC score. A classification report provides precision, recall, F1-score, and support for each class. Using the "roc_auc_score" function, the area under the curve (AUC) score is calculated.
+
+In the summary list, the evaluation results are summarized. Model list counters and the summary information, including the logistic regression model summary, accuracy, cross-validation average accuracy, classification report, and AUC score, are concatenated. Summary information is stored in the summary list at the index indicated by the summary counter. For subsequent iterations, the summary counter is incremented.
+
+This code performs logistic regression on a scaled dataset with manual feature reduction based on p-values. The program fits the logistic regression model, evaluates its performance, and stores the evaluation results. Evaluations include accuracy, cross-validation, confusion matrix, classification report, and ROC curve analysis. Through manual feature reduction and hyperparameter tuning, this provides insight into the performance of the logistic regression model on the reduced feature set.

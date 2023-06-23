@@ -1,0 +1,23 @@
+On backward-looking data, this code applies logistic regression modeling. We are building a logistic regression model based on backward-looking data, evaluating its performance, and storing the results in a summary table.
+
+A min-max scaler is used to apply feature scaling to the input features "X_backward". A scaler is fitted to "X_backward" to learn the scaling parameters, and then "X_backward" is transformed into "X_backward_scaled". Column names are set to match the original "X_backward" columns in the transformed data frame.
+
+Using the statsmodels library's "sm.Logit" class, a logistic regression model is created. Inputs to the model include the target variable "y_logit" and the scaled input data "X_backward_scaled". For convergence, 50 iterations are allowed. Using the "fit" method, the logistic regression model is fitted to the data, and the result is stored in "result_sns".
+
+A summary of the fitted logistic regression model is printed using the "print(result_sns.summary())" statement. The summary provides information about the model's coefficients, statistical significance, and goodness of fit.
+
+Using the training data "X_backward_scaled_train" and the target labels "y_train", a logistic regression model is fitted using scikit-learn. A model is stored in the "model_list" at the specified index "model_counter".
+
+A logistic regression model is then used to predict labels for the test data "X_backward_scaled_test", and the predicted labels are stored in "y_pred".
+
+The "print" statement displays the accuracy of the logistic regression classifier on the test set. A logistic regression model's "score" method is used to calculate accuracy scores.
+
+The "cross_val_score" function is used to cross-validate the logistic regression model. With the specified time series splitting strategy "tscv", it uses the training data "X_backward_scaled_train" and the corresponding target labels "Y_train". Each fold is scored, and the average accuracy across all folds is displayed.
+
+Using the predicted labels "y_pred" and the true labels "y_test", the confusion matrix is calculated. A confusion matrix shows the number of true positives, true negatives, false positives, and false negatives for each class of the model.
+
+By using the "print" and "plt" functions, accuracy, classification report, and ROC curve plot with corresponding AUC score can be printed and displayed.
+
+In the summary list, the evaluation results are summarized. Concatenated with relevant labels and formatting are the counters for the model list and summary information, including the logistic regression model summary, accuracy, cross-validation average accuracy, classification report, and AUC score. Summary information is stored in the summary list at the index indicated by the summary counter. In subsequent iterations, the summary counter is incremented.
+
+This code performs logistic regression modeling on backward-looking data. Using statsmodels and scikit-learn libraries, it scales input features, fits a logistic regression model, makes predictions, and evaluates the model's performance through accuracy, cross-validation, confusion matrix, classification report, and ROC curve analysis. For further analysis and comparison, the evaluation results are stored in a summary list.

@@ -1,0 +1,15 @@
+The provided code snippet visualizes and compares daily and monthly data for the 'target_ret' column.
+
+By resampling the original DataFrame df, the code first creates a new DataFrame named Data_Monthly. Resampling is done monthly, so the resulting DataFrame contains the average values of the columns in df for each month.
+
+As a next step, the code sets up a plot with a figure and axes object. By doing this, the framework for visualizing the data is prepared.
+
+Using the axes object, the code plots the 'target_ret' column from the original DataFrame df. Within a specified date range, the plotted data represents the daily values of the 'target_ret' column.
+
+The code also plots the 'target_ret' column from the resampled DataFrame Data_Monthly as another line plot. Within the same date range, the plotted data represents the monthly averages of the 'target_ret' column. To differentiate it from the daily values, the line is drawn with a linewidth of 2.
+
+Using the ax.set_ylabel() function, the code sets the y-axis label to 'target_ret' for clarity. Understanding the data along the y-axis is made easier by this.
+
+Ax.legend() is used to add a legend to the plot. It displays labels for the plotted lines, distinguishing between daily and monthly data. In this way, the two lines in the plot can be identified and differentiated easily.
+
+This code snippet generates a line plot that compares the daily values of the 'target_ret' column to its monthly averages using the original DataFrame. This code provides a visual representation of any variations or patterns in the 'target_ret' column at different temporal resolutions by resampling the data on a monthly basis. By comparing the daily and monthly data for this column, the resulting plot helps to clarify the relationship between the two.

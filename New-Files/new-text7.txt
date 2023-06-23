@@ -1,0 +1,1 @@
+We import our data from a .csv file into a DataFrame here. Excel files and other sources can also be imported into Pandas.

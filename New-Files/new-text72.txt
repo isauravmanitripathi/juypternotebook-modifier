@@ -1,0 +1,21 @@
+Using the provided code, a bar chart visualization of time series cross-validation (TSCV) is generated.
+
+The code defines the number of splits, "tscv_splits," which determines how the data will be divided for cross-validation into folds or subsets.
+
+"Split_size" is calculated by dividing 70% of the 'ret' column in the DataFrame 'df' by the number of splits.
+
+In the following steps, three lists are initialized: 'train_data,' 'test_data,' and 'bar_label.' These lists are initially filled with zeros, and their lengths are equal to 'tscv_splits' minus one.
+
+Based on the split sizes, a loop populates the 'train_data,' 'test_data,' and 'bar_label' lists with appropriate values. It assigns the corresponding values to each element of the list from 0 to the length of 'train_data'.
+
+After formatting adjustments are made to the 'bar_label' list, the elements are converted to integers and assigned string labels.
+
+Using the 'figsize' argument, the code creates a figure and axes object for the plot.
+
+By using the axes object, the code generates two sets of bars on the plot: one for training and one for validation. Using the 'autolbl' function, each bar is labeled with the corresponding split size.
+
+For the plot, additional formatting is applied to the axes labels, title, and legend.
+
+The plot is displayed using the 'plt.show()' function.
+
+This code generates a bar chart that illustrates a time series cross-validation scheme. A visual representation of how cross-validation data is partitioned for training and validation is provided by the size of training and validation data for each split.

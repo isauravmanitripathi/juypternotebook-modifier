@@ -1,0 +1,1 @@
+It is useful to visualize and understand our dataset before we jump into machine learning techniques and their benefits.

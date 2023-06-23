@@ -1,0 +1,2 @@
+
+For this project, we got prepared data, which is not always the case. The majority of the time, you have to search for the data yourself and transform it into something meaningful. As part of this process, we look for format issues, outliers, trends, and missing or incorrect data. This task can have a significant impact on the success of your project if you underestimate its importance.

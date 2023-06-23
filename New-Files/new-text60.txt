@@ -1,0 +1,1 @@
+When we plot the variance share of each Principal Component, we see that the first three components already explain about 75% of the variation.

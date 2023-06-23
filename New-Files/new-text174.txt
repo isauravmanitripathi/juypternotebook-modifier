@@ -1,0 +1,13 @@
+Logistic regression is performed on a dataset that has undergone principal component analysis (PCA) and feature selection. A logistic regression model will be built using the selected principal components, and hyperparameters will be tuned to optimize the model's performance.
+
+Using the PCA-transformed and scaled dataset, the code selects specific principal components. The dataset only contains the principal components 'PC3', 'PC4', and 'PC13', which are stored in "X_pca_scaled".
+
+Using the "train_test_split" function, the dataset is then divided into training and test sets. Training set "X_pca_scaled_train" and test set "X_pca_scaled_test" are created. To maintain the time series order, the data is not shuffled, and the test set size is set to 30%.
+
+The solver, maximum number of iterations, and class weights of a logistic regression model are specified at the beginning. A model is fitted to the training data "X_pca_scaled_train" and "Y_train".
+
+The "GridSearchCV" class is then used to tune the logistic regression model's hyperparameters. Grid search explores different combinations of hyperparameters, including regularization parameter "C" and penalty type ("l1" or "l2"). Using the training data and the corresponding target labels, "X_pca_scaled_train" and "Y_train", the grid search is performed using the time series splitting strategy "tscv".
+
+With the "print" statement, the best hyperparameters are printed after the grid search is completed. According to the evaluation metric used in the grid search, the output displays the tuned hyperparameters that provide the best performance.
+
+This code performs logistic regression on a PCA- and feature-selected dataset. By selecting specific principal components, splitting the data into training and test sets, fitting a logistic regression model, and tuning the hyperparameters, the model is tuned. Based on the evaluated performance, the best hyperparameters for the logistic regression model are printed.

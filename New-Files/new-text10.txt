@@ -1,0 +1,18 @@
+We have financial variables from January 2004 to July 2017. Our conditioning variables can be divided into three categories. Our seminar thesis provides an in-depth explanation of what these variables mean, since we are focusing on the application of machine learning to finance.
+
+Observations: $ N = 3303 $ <br> Aspects: $ p = 14
+
+Our features can be divided into two categories:
+
+The first. Looking ahead:
+
+  *  Risk-free rate
+  *  $SVIX^2$  as the risk-neutral variance 
+  *  Risk-neutral skewness
+  *  Risk-neutral kurtosis 
+
+The second. Backward-looking: S&P 500 return, Market return, Cost return, Value return,  Momentum return
+
+  Variations in their 10 day rolling window
+
+Bloomberg provides us with daily return values for the S&P 500. The other factors were taken from [Kenneth French's website](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html).

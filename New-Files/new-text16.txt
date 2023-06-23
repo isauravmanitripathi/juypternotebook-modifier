@@ -1,0 +1,19 @@
+Several tasks are performed in the provided code snippet to visualize the correlation between features in a DataFrame.
+
+By dropping the columns 'Year', 'Month', and 'Day' from the original DataFrame df, the code creates a new DataFrame named dforiginal. The objective of this step is to isolate the original features and create a separate DataFrame that focuses only on these features, excluding the additional time-based columns.
+
+A heatmap representing the correlation between the features in the dforiginal DataFrame is then displayed by the code. To visualize the correlation matrix, the plot is configured with a 12 by 6 aspect ratio.
+
+The code uses the .corr() function to calculate the correlation between the features. Matrix containing pairwise correlations between all pairs of features in DataFrame, offering insight into relationships and dependencies.
+
+Using the np.zeros_like() function, the code emphasizes only the lower triangular part of the correlation matrix. As with the correlation matrix, this mask is a boolean matrix. The code hides the upper triangular part of the correlation matrix in the heatmap plot by setting the upper triangular values of the mask to True using the np.triu_indices_from() function.
+
+Using the seaborn library's sns.heatmap() function, the code generates a heatmap plot. We round the correlation matrix to two decimal places and annotate the heatmap with the corresponding correlation values. We apply the colormap "coolwarm", which uses cool colors (blue) for low correlation values and warm colors (red) for high correlation values.
+
+Using f.subplots_adjust(), the code adjusts the top margin of the plot. With this adjustment, the title can be accommodated at the top of the plot.
+
+It provides a clear description of the plot's purpose and content by setting the plot's title to "Correlation Heatmap" with a font size of 14.
+
+Finally, the code manually sets the y-axis limits to match the correlation matrix's length. In this way, all rows of the correlation matrix are displayed correctly on the y-axis, preventing any truncation or overlap.
+
+This code snippet visualizes the pairwise correlations between features in the dforiginal DataFrame using a correlation heatmap plot. It provides valuable insights into the relationships and dependencies among the features by isolating the original features, computing the correlation matrix, and displaying the heatmap with proper formatting and annotations.

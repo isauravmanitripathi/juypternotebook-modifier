@@ -1,0 +1,13 @@
+Using the values from the first three principal components, the code generates a 3D scatter plot to visualize the data points.
+
+To hold the plot, the figure object "fig" is created first.
+
+By using the "add_subplot" method, an axes object, "ax," is added to the figure. The argument "111" specifies that there should be only one subplot in the plot. The projection is set to '3d', indicating that the plot will be rendered in three dimensions.
+
+There is a color list, "color.". The color of each data point will be determined by the value of the "y_train" variable. The color will be blue if the value is 1, otherwise it will be red. A list comprehension is used to accomplish this.
+
+To create the scatter plot, the "ax.scatter" function is called. Data points along the three axes are represented by the arguments "xs," "ys," and "zs," which come from the transformed training data, "X_pca_scaled_train." The "zdir" parameter indicates that the data points should be projected onto the z-axis. The size ('s'), color ('c'), and depth shading ('depthshade') of the marker are also specified.
+
+The "ax.set_xlabel," "ax.set_ylabel," and "ax.set_zlabel" functions set the labels for the x-axis, y-axis, and z-axis, respectively.
+
+With the values from the first three principal components, the code generates a 3D scatter plot to visualize the data points. Each data point's color is determined by its "y_train" value. Plotting the transformed principal component space provides insight into the distribution and relationships between data points.

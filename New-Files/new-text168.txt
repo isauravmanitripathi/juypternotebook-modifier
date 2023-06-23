@@ -1,0 +1,3 @@
+As a result of the LLR p-value, we accept the null hypothesis rather than our model, but this time the ret-2 z value has reached a significance margin of 2 and its p-value is smaller than 0.05, so we can conclude that the model is improved by this feature and its coefficient.
+
+According to the Accuracy score on the test set, the cross validation score for the time series, and the confusion matrix, there is still no real classification going on. This time, our model predicts a few observations falling, but not in a positive way. The ROC curves are very similar to the previous ones

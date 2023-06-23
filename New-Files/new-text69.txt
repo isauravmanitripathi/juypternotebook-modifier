@@ -1,0 +1,1 @@
+For the Random Forest, we only split the non-scaled data. Above, we have already split the scaled data.

@@ -1,0 +1,7 @@
+We want to measure the quality of our results after we have trained our model. There are a variety of metrics available for this purpose. In "---", we will refer to a selection. For now, we will introduce you to 'accuracy', which is calculated by dividing all results correctly labeled by the model by the number of data points. (see Hastie et al., 2017)
+<center><br>
+    <big><big>
+        $Accuracy =\frac{True Positive + True Negative}{True Positive + True Negative + False Positive + False Negative}$
+</big></big>
+</center><br>
+  

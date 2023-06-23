@@ -1,0 +1,1 @@
+Feature engineering involves extracting valuable information from your data to get the most appropriate features based on the data, the model, and the task. Zheng et al. (2018) demonstrate how this can significantly improve your estimator's performance.

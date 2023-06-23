@@ -1,0 +1,3 @@
+There is a correlation between 'market' and 'ret' of 1.0 since 'market' represents the U.S. return. 'Ret' is the return of the S&P 500 index (see Kenneth French's website). As we do not expect 'market' to add any information to our models, we do not include it as a feature.
+
+Furthermore, 'svix' is highly correlated with 'market_risk', as one would expect for an estimator of S&P 500 risk neutral density variance.

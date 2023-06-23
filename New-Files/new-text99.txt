@@ -1,0 +1,11 @@
+The code provides four grid searches, each aimed at finding the optimal hyperparameters for a specific SVM model with a different kernel type: linear, RBF, polynomial, and sigmoid.
+
+Grid search objects are defined for each kernel type using the "GridSearchCV" class. "estimator" is set to the SVM model with the appropriate kernel type: "model_linear" for linear, "model_rbf" for RBF, "model_poly" for polynomial, and "model_sigmoid" for sigmoid.
+
+In grid search, the "cv" parameter is set to time series cross-validation, "tscv," ensuring that the data is appropriately split and evaluated in a time-dependent manner.
+
+"param_grid" specifies the parameter grid for each kernel type: "param_grid_linear" for linear, "param_grid_rbf" for RBF and sigmoid, and "param_grid_poly" for polynomial.
+
+Grid search can be sped up by setting the "n_jobs" parameter to -1, which allows parallel fitting across all CPU cores.
+
+The code sets up four separate grid searches, each targeting a different SVM model and kernel. Based on their respective parameter grids, these grid searches explore different combinations of hyperparameters. Cross-validation is used to train and evaluate the models, and grid searches are used to identify the best hyperparameters.

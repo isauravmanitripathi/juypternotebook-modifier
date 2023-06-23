@@ -1,0 +1,1 @@
+We can see that the RFE selected qskew and ret-2 as we would have done from the results above. We will only select the features selected by the RFE and run our code again.

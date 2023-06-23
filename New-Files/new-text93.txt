@@ -1,0 +1,13 @@
+In the following code, a grid search is used to find the optimal hyperparameters for a radial basis function (RBF) support vector machine (SVM).
+
+Grid search is performed using "GridSearchCV" class. As the basis for the grid search, the "estimator" parameter is set to "model_rbf," a SVM model with an RBF kernel.
+
+Using the time series cross-validation scheme created earlier, the "cv" parameter is set to "tscv." As a result, the grid search is properly split and evaluated in a time-dependent manner.
+
+Param_grid is set to "param_grid_rbf," which is the RBF kernel's parameter grid. The hyperparameters 'C' (regularization parameter) and 'gamma' (Gaussian kernel width) are included in this file.
+
+"n_jobs" is set to -1, enabling parallel fitting on all CPU cores. Grid searches can thus take advantage of multiple cores for faster execution.
+
+The "verbose" parameter is set to 10, which determines how many status messages are printed during the fitting process. More detailed output is indicated by a higher value, such as 10.
+
+The code uses the GridSearchCV class to find the optimal hyperparameters for an RBF SVM model using a grid search. Model, cross-validation scheme, parameter grid, and additional settings for parallel fitting and verbosity are specified. Using the grid search, the best hyperparameters for the RBF SVM model will be identified by exploring different combinations of 'C' and 'gamma' values.

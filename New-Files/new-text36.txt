@@ -1,0 +1,19 @@
+The provided code snippet creates a correlation heatmap plot for a DataFrame named df2.
+
+The code creates a new DataFrame called df2 by removing specific columns ('Year', 'Month', and 'Day') from the original DataFrame df. The goal of this step is to create a separate DataFrame that focuses solely on the remaining features, excluding the time-related columns. In this way, the code narrows down the data to only consider correlations among these selected features.
+
+This code displays a correlation heatmap of the features in DataFrame df2 using a plot. This plot is larger (20 by 14) to accommodate a potentially larger number of features, ensuring a clear visualization of the correlation matrix.
+
+In order to calculate the correlation matrix, the code calculates the pairwise correlations between all pairs of features in the DataFrame df2. A correlation matrix shows the strength and direction of the linear relationship between two features. Identifying potential patterns or associations in the data can be achieved by examining the relationships and dependencies between the features.
+
+The code creates a mask to enhance the visual representation of the correlation matrix. In the upper triangular part, the mask is a boolean matrix of the same shape as the correlation matrix. Due to the symmetric nature of the correlation matrix, this mask hides the upper triangular part of the correlation matrix when plotting a heatmap.
+
+The correlation heatmap plot is generated using the seaborn (sns) library's heatmap() function. The heatmap visualizes the correlation matrix, with each cell colored according to its correlation value. Colormap "coolwarm" assigns cool colors (blue) to low correlation values, warm colors (red) to high correlation values, and intermediate colors to moderate correlation values. Furthermore, the code provides precise information about correlation strengths by annotating the rounded correlation values within each cell.
+
+Using f.subplots_adjust(), the code adjusts the top margin to ensure the heatmap plot displays properly. A sufficient amount of space is provided at the top of the plot to accommodate the title and annotations without any overlap or cropping.
+
+Code sets the plot title as "Correlation Heatmap" with a font size of 14, describing the plot's purpose and content clearly. In analyzing correlations between selected features, the title helps to clarify the plot's nature and relevance.
+
+As a final step, the code manually adjusts the y-axis limits of the plot to match the correlation matrix's length. The adjustment ensures that all rows of the correlation matrix are correctly displayed on the y-axis, preventing data loss.
+
+By removing time-related columns from the original DataFrame df, this code snippet creates a separate DataFrame df2. To visually represent the pairwise correlations between the selected features, the correlation heatmap plot is generated. This code provides insight into the relationships and dependencies between features by calculating the correlation matrix, applying a mask to hide redundant information, creating the heatmap, and adjusting the plot layout. Using the plot, one can understand the correlation patterns, strengths, and directions between selected features, which facilitates further analysis, decision-making, and exploration.

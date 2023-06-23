@@ -1,0 +1,9 @@
+Each grid search uses different sets of training data to find the optimal hyperparameters for an SVM model with a radial basis function (RBF) kernel.
+
+The "fit" method is called on each grid search object. "gsearch_rbf_all" fits the RBF SVM model using the entire training dataset scaled as "X_all_scaled_train" and the corresponding target variable "y_train."
+
+In the remaining five grid searches, namely "gsearch_rbf_forward," "gsearch_rbf_backward," "gsearch_rbf_factors," "gsearch_rbf_returns," and "gsearch_rbf_pca," different subsets of training data were used to fit the RBF SVM model, along with the target variable "y_train."
+
+The code allows evaluating the RBF SVM model under different feature representations or transformations by fitting these grid searches with different training data subsets. As a result, the most suitable training data subset or feature space can be identified based on the selected evaluation metric.
+
+The code fits six different RBF SVM models with different sets of training data. Grid searches are fitted using a subset of the training data and the target variable. A RBF SVM model can be evaluated across various feature representations or transformations by fitting the models with different training data subsets.

@@ -1,0 +1,9 @@
+Using different sets of training data, the given code fits six separate grid searches aiming to find the optimal hyperparameters for an SVM model with a polynomial kernel.
+
+On each grid search object, the "fit" method is called. "gsearch_poly_all" fits the polynomial SVM model using the entire training dataset scaled as "X_all_scaled_train" and the corresponding target variable "y_train.".
+
+In the remaining five grid searches, "gsearch_poly_forward," "gsearch_poly_backward," "gsearch_poly_factors," "gsearch_poly_returns," and "gsearch_poly_pca," different subsets of the training data, each scaled accordingly, along with the target variable "y_train," are used to fit the polynomial SVM model.
+
+The code allows evaluating the performance of the polynomial SVM model under various feature representations or transformations by fitting these grid searches with different training data subsets. In terms of the selected evaluation metric, this can help identify the best training data subset or feature space.
+
+The code fits polynomial SVM models to six different sets of training data. Grid searches are fitted using a subset of training data and the target variable. Polynomial SVM models can be evaluated across various feature representations or transformations by fitting them with different training data subsets.

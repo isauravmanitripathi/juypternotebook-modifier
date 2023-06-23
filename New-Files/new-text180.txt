@@ -1,0 +1,9 @@
+The code iterates over the range of the "summary_counter" variable, which represents the number of models for which summaries are stored. The goal is to separate each summary of the models clearly.
+
+By using the loop variable "i," the code prints the summary of a specific model by accessing the corresponding index in the "summary" list. "print(summary[i])" displays the current model's summary information.
+
+In order to distinguish between summaries of different models, the code prints a line of underscores after printing the summary. "print('________________________________________________________________________________________')" achieves this.
+
+In addition, several line breaks are included to improve the readability of the printed output. "print('/n /n /n /n /n /n /n')" creates these line breaks.
+
+Essentially, this code prints each summary from the stored summaries of different models. To improve readability, it adds a visual separator between each summary and includes line breaks. As a result, the model summaries are presented in a clear manner, making interpretation and comparison easier.

@@ -1,0 +1,1 @@
+The first 9 rows contain NaNs introduced by our rolling mean features, so they cannot be used for training. All data is preserved in an additional DataFrame.

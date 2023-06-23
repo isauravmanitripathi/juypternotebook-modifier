@@ -1,0 +1,5 @@
+Using a random selection of variables (features), Decision Trees are created. The number of trees can also be selected. Here, we will examine how modifying these parameters will affect accuracy.
+
+To obtain comparable results, we will also use TimeSeriesSplit Cross Validation.
+
+Let's see what parameters are currently set. We can print out the currently used parameters using the method get_params().

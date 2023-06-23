@@ -1,0 +1,1 @@
+Our trained model is then used to make predictions for our test data. Accuracy has already been discussed. In addition, if we provide a classification_report() with our passed test data, we get other metrics that we will discuss later. Currently, all features show poor accuracy. How did our model get here, and how can we improve it?

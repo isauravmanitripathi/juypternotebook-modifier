@@ -1,0 +1,11 @@
+This code splits a dataset called "X_factors" into two parts: a training set and a test set.
+
+X_factors_train is the portion of the data that will be used to train a machine learning model. A subset of the original dataset is used to teach the model patterns and relationships.
+
+"X_factors_test" is the remaining portion of the dataset that is not included in the training set. In this set, the trained model is evaluated for performance and generalization ability. This allows us to assess the model's ability to predict unseen data.
+
+"train_test_split" is used to split the test. "Shuffle" is set to "False," indicating that the data is not randomly shuffled before splitting. Both training and test sets will maintain the order of the data points in the original dataset.
+
+With "test_size" set to 0.3, 30% of the data will be allocated to the test set, and 70% to the training set.
+
+The code facilitates the partitioning of the "X_factors" dataset into two subsets, allowing the training and evaluation of a machine learning model on different sets of data.

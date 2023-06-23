@@ -1,0 +1,1 @@
+To determine if our variables are linearly related, let's plot a correlation matrix. We will refer to variables as 'features' from now on, since this is the name commonly used in machine learning

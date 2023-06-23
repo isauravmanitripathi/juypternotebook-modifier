@@ -1,0 +1,1 @@
+For our features, we use Min-Max Scaling. All values of a feature are linearly scaled into the interval [0, 1]. For scaling, we use Scikit-learn.

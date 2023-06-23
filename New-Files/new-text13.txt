@@ -1,0 +1,1 @@
+We use dates as an index to make working with our data easier. The loctimestamp will be converted to a datetime format and set as index with .set_index() 

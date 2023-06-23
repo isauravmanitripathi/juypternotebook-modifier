@@ -1,0 +1,3 @@
+Our Model is being built
+
+We will build our first model using our previously split data in this section. With the help of the scikit-learn library, we use the RandomForestClassifier() method to create our model. We will then use our fit() method to train the model using our training data.

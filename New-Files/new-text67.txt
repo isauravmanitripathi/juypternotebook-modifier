@@ -1,0 +1,3 @@
+As we've walked you through our data and preprocessing, it's time for more machine learning vocabulary.
+
+In addition, we will guide you through the process of finding the best model for your needs. As a result, we will refer to this as the "machine learning pipeline". Using our different algorithms, we will explain our course of action. Preprocessing and selecting the best features are the first steps. We then split our data into training and testing. See MÃ¼ller et al., 2016 for more information.

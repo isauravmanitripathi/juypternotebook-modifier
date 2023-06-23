@@ -1,0 +1,9 @@
+Using the statsmodels library, this code performs logistic regression. Logistic regression is used to fit a model to the dataset that has been scaled using the min-max scaler, "X_all_scaled", and the corresponding target variable, "y_logit".
+
+"sm.Logit" is used to create the logistic regression model. Model inputs are the target variable, "y_logit", and the scaled feature set, "X_all_scaled". For convergence, 50 iterations are allowed.
+
+A logistic regression model is fitted to the data using the "fit" method, and the result of the fitting process is stored in the "result_sns" variable. A summary of the logistic regression model's parameters, coefficients, statistical measures, and goodness-of-fit statistics is obtained by calling the "summary" method on "result_sns.".
+
+Using the "print(result_sns.summary())" statement, the logistic regression model summary is printed. This provides a comprehensive overview of the model's performance, including coefficient estimates, standard errors, p-values, and various statistical measures.
+
+Using the statsmodels library, this code performs logistic regression. A logistic regression model is fitted to the scaled dataset, "X_all_scaled", and the corresponding target variable, "y_logit". Detailed information about the parameters and statistical measures of the fitted model is then displayed in the summary.

@@ -1,0 +1,1 @@
+The rolling window means for the last five and ten days are calculated next. Exponentially weighted moving averages are also included. With a halflife of 5, 10, and 30 days, the observation's weights in this special moving average decrease exponentially. Trends and momentum are detected using these indicators.

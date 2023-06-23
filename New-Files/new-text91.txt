@@ -1,0 +1,1 @@
+We found that the polynomial kernels were training endlessly for some $(C,\gamma)$-combinations. As we suspect numerical instabilities, we limit the degree to $2$ and search fewer parameters. (2016) (Hsu et al.)

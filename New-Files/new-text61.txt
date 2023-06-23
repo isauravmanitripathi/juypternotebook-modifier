@@ -1,0 +1,15 @@
+This code generates a bar plot to visualize the explained variance ratios of the principal components obtained from a PCA model previously run.
+
+As a first step, a figure object, "fig," is created with a specific size defined by the argument [20,6]. The plot's width and height are determined by this.
+
+The "add_axes" method is used to add an axes object, "ax," to the figure. In the figure, [0,0,1,1] specifies the position and size of the axes. It indicates that the axes should occupy the entire figure in this case.
+
+It generates a range of numbers, "labl," starting at 1 and ending at the number of components in the PCA model plus 1. Each principal component is represented by a different number on the x-axis.
+
+Using the "explained_variance_ratio_" attribute, the explained variance ratios of the principal components are calculated from the PCA model. Each principal component explains a specific proportion of the total variance in the data.
+
+A bar plot is then created by calling the "ax.bar" function. "labl" provides the x-axis labels, and "expvar" provides the heights of the bars.
+
+To display the generated bar plot, use the "plt.show()" function.
+
+The code creates a bar plot to illustrate the explained variance ratios of the principal components. Using the plot, it is possible to visualize how each principal component contributes to the variance of the data.
